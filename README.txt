@@ -1,12 +1,12 @@
-YAHTZEE by Owen Daigle
+YAHTZEE by TheRuntingMuumuu
 
-How to use the program : 
+How to use the program :
 1. Make sure you have python 3 installed on your computer.
 2. Run the program on a WINDOWS computer
 3. Follow on screen instructions
 
 
-Limitations of the program : 
+Limitations of the program :
 1. It only works on windows. It will not work on linux/android/mac systems.
 2. When you have to type a positive answer to a prompt, you must write a capital Y like this 'Y'.
 3. When you enter a category for the categories, it is case sensitive. chance is not the same as Chance.

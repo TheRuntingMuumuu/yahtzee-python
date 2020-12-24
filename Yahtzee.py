@@ -1,8 +1,8 @@
 """
 course: ICS3U
-filename: OwenDaigle_Yahtzee.py
+filename: Yahtzee.py
 date: January 13 2019
-name: Owen Daigle
+name: TheRuntingMuumuu
 description: This program is the dice game Yahtzee for the computer. It is navigated by a CLI. It is my summative for my ICS3U grade 11 computer science course.
 """
 
