@@ -7,7 +7,7 @@ description: This program is the dice game Yahtzee for the computer. It is navig
 """
 
 def clearScreen(): #this make it support linux and mac
-    """This will work most of the time. Tries three times to clear the screen."""
+    """This will work most of the time. Tries five times to clear the screen."""
     os.system('cls') #windows clear
     os.system('clear') #macos/linux clear
     print(chr(27)+'[2j') #first attempt at clearing the screen w/ ansi escape codes
@@ -206,5 +206,5 @@ def theGame():
         print('\nYour final score is : ', finalScore) #this prints thje final score
     else:
         print('\nYou cheated at some point during the game, so the score cannot be calculated since you did not finish the game.')
-    return(standTextOut('\n\tThank you for playing\n')) #I use return instead of print since if I use print, it will also output NONE since this is the last line in the function.
+    return(standTextOut('Thank you for playing')) #I use return instead of print since if I use print, it will also output NONE since this is the last line in the function.
 print(theGame())#this activates the function which is most of the game and prints a thanks to the user
