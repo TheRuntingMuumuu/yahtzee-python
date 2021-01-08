@@ -28,7 +28,7 @@ import random #allows me to use the random module so that I can get a random val
 import os #allows me to find the size of the terminal.
 print(standTextOut("YAHTZEE"))
 print('Welcome to the game Yahtzee.')
-if input('Do you want to view the rules? Y/n : ').lower()[0] == 'y': #will convert the input to lowercase and then look at the first letter (thanks ttr)
+if input('Do you want to view the rules? Y/n : ').lower().strip()[0] == 'y': #will convert the input to lowercase and then look at the first letter (thanks ttr)
     print('\n\nIt is a dice game.\n\n You roll 5 dice, and you try to get a combination that will get you the highest number of points in one of thirteen categories. You need to fill each category once each round, and there are 13 rounds. If you don’t like the combination that you got on your roll, you can reroll either all, or some of the dice for a total of three rolls. Then, you must accept what you have. There are 2 groups of categories. Upper, and Lower. If you score more than 63 points in the upper category, you get a 35-point bonus. The categories are:  \n\n\tNumbers (1 through 6) [upper] \n\t\tYou will add the number of \'x\'s into the score of that number \n\t3 and 4 of a kind [lower] \n\t\tSum of all of the faces (55568 = 29pts) \n\tStrait [lower] \n\t\tSmall (4 in a row, 1234, 3456, 2345) 30pts \n\t\tLarge (12345, 23456) 40pts \n\tFull house (ex. 11122 OR 22255 OR 99966) [lower] 25pts \n\tYahtzee (55555 OR 11111 OR 22222 OR 33333 OR 44444 OR 66666) [lower] 50pts for the first, 100 for the second, third, fourth etc. if applicable \n\tChance (ANYTHING) [lower] Sum up the total (24868 = 28) \n You can only score once per category.\n\n') #these are just the rules to the game with formatting
     input('Press \'ENTER\' to continue...')
 
@@ -69,7 +69,7 @@ def theGame():
                     dice[dice2RerollActual[k]] = random.randint(1, 6) #this rerolls the dice
             print('This is what you ended up with', dice)
         print('This is the list of the categories : \n\t1 : ', cat1, '\n\t2 : ', cat2,'\n\t3 : ', cat3,'\n\t4 : ', cat4,'\n\t5 : ', cat5,'\n\t6 : ', cat6,'\n\t3 of a kind : ', cat3Kind,'\n\t4 of a kind : ', cat4Kind, '\n\tfull house : ', catFullHouse,'\n\tsmall strait : ', catSmallStrait,'\n\tlarge strait : ', catLargeStrait,'\n\tchance : ', catChance,'\n\tyahtzee : ', catYahtzee)
-        userInputForCat = input('Which category do you want to fill ? : ')
+        userInputForCat = input('Which category do you want to fill ? : ').strip()
         if userInputForCat == '1': #all of these if and elif statements will determine which category the user wants to fill based on their input.
             if cat1 != 'UNUSED': #this will only activate if the user has already chosen the category, and then it will terminate the game if it activates since the user will have cheated.
                 print('\n\tYou have cheated. You have chosen the same category twice. In the future, please do not do that.')
