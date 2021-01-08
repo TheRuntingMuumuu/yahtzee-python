@@ -8,9 +8,9 @@ How to use the program:
 
 
 Limitations of the program :
-2. When you enter a category for the categories, it is case sensitive. chance is not the same as Chance.
-3. When you are entering the dice that you want to reroll, you must enter them in the proper format which is like this : 1 2 3 4 5  OR 1 3 4 NOT 12345 OR 134
-4. All inputs must be entered in the exact right format (including spaces, 'chance ' is not the same as 'chance') or the program will crash.
+1. When you enter a category for the categories, it is case sensitive. chance is not the same as Chance.
+2. When you are entering the dice that you want to reroll, you must enter them in the proper format which is like this : 1 2 3 4 5  OR 1 3 4 NOT 12345 OR 134
+3. All inputs must be entered in the exact right format (including spaces, 'chance ' is not the same as 'chance') or the program will crash.
 
 I included both the OS and the RANDOM modules. The random module is so I can get the dice to roll random numbers. Without it, the dice would not work. The OS module is so that I can execute the 'cls' command in the windows command prompt so that I can clear the window. It is used for formatting, and making the program look good.
 
